@@ -14,7 +14,6 @@ body {
   font-family: "Josefin Slab", Arial, serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.7;
   color: #828282;
 }
 
@@ -173,7 +172,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 700;
 }
 .fh5co-nav ul li a {
-  font-size: 20px;
+  font-size: 25px;
   font-family: "Sacramento", Arial, serif;
   padding: 30px 15px;
   color: rgba(0, 0, 0, 0.7);
@@ -235,7 +234,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #999999;
   line-height: 1.2;
   text-transform: none;
-  font-size: 14px;
+  font-size: 22px;
   letter-spacing: 0;
 }
 .fh5co-nav ul li.has-dropdown .dropdown li a:hover {
@@ -298,7 +297,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav .fh5co-social-icons li a i {
   font-size: 18px;
-  color: #000;
+  color: #fff;
 }
 
 #fh5co-counter,
@@ -614,7 +613,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
-  zoom: 1;
+  zoom: 1.3;
   *display: inline;
   color: #1d2f3b;
   padding-left: 10px;
