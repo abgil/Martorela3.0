@@ -132,11 +132,12 @@
 		border-bottom: dotted 1px;
 		color: #92cee2;
 		text-decoration: none;
+		font-size: 2em;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #00D3B7;
+			color: #1b87ab;
 		}
 
 	strong, b {
