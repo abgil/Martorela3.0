@@ -569,8 +569,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-started,
 #fh5co-blog,
 #fh5co-blog-popular,
-#fh5co-contact,
-#fh5co-footer {
+#fh5co-contact {
   padding: 7em 0;
   clear: both;
 }
@@ -580,8 +579,7 @@ h1, h2, h3, h4, h5, h6, figure {
   #fh5co-started,
   #fh5co-blog,
   #fh5co-blog-popular,
-  #fh5co-contact,
-  #fh5co-footer {
+  #fh5co-contact {
     padding: 3em 0;
   }
 }
