@@ -352,7 +352,6 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-hero {
   min-height: 600px;
-  background: #fff url(../images/loader.gif) no-repeat center center;
 }
 @media screen and (max-width: 480px) {
   #fh5co-hero {
@@ -1418,5 +1417,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item:hover .fh5co-listing-copy .icon {
   margin-right: 10px;
 }
-
+.copyright{
+  padding-top: 30px;
+}
 /*# sourceMappingURL=style.css.map */
