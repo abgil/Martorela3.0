@@ -300,6 +300,9 @@ h1, h2, h3, h4, h5, h6, figure {
   .fh5co-video {
     height: 450px;
   }
+  #fh5co-hero .featured:first-child {
+    margin-top: 30px;
+  }
 }
 .fh5co-video a {
   z-index: 1001;

@@ -76,7 +76,7 @@ body.is-loading-0 *, body.is-loading-0 *:before, body.is-loading-0 *:after {
   transition: none !important;
 }
 html, body {
-  background-color: #101010;
+  background-color: #ffffff;
   overflow: hidden;
 }
 
@@ -366,7 +366,7 @@ dl dd {
   top: 0;
   width: 4em;
   height: 4em;
-  background-image: url("images/close-small-alt.svg");
+  background-image: url("images/close-small.svg");
   background-repeat: no-repeat;
   background-size: 32px 32px;
   cursor: pointer;
@@ -426,7 +426,7 @@ body.is-loading-1 #main {
 /* Header */
 
 #header {
-  padding: 3em 2.25em 1.75em 2.25em;
+  padding: 8em 2.25em 1.75em 2.25em;
 }
 #header h1 {
   font-size: 2.25em;
@@ -496,7 +496,7 @@ body.is-loading-1 #main {
   top: 0;
   width: 100%;
   height: 100%;
-  box-shadow: inset 0 0 0 2px #92cee2, inset 0 0 0px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 0 5px #92cee2, inset 0 0 0px 3px rgba(0, 0, 0, 0.15);
   opacity: 0;
   z-index: 1;
 }
@@ -601,9 +601,6 @@ body.is-loading-1 #main {
   -ms-pointer-events: auto;
 }
 #viewer .inner:before {
-  background-image: -moz-linear-gradient(left, rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 0) 10em, rgba(16, 16, 16, 0)), -moz-linear-gradient(right, rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 0) 10em, rgba(16, 16, 16, 0));
-  background-image: -webkit-linear-gradient(left, rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 0) 10em, rgba(16, 16, 16, 0)), -webkit-linear-gradient(right, rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 0) 10em, rgba(16, 16, 16, 0));
-  background-image: -ms-linear-gradient(left, rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 0) 10em, rgba(16, 16, 16, 0)), -ms-linear-gradient(right, rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 0) 10em, rgba(16, 16, 16, 0));
   content: '';
   display: block;
   position: absolute;
@@ -616,8 +613,8 @@ body.is-loading-1 #main {
   -webkit-tap-highlight-color: transparent;
   position: absolute;
   top: 0;
-  width: 4em;
-  height: 4em;
+  width: 6em;
+  height: 6em;
   background-image: url("images/close.svg");
   background-repeat: no-repeat;
   background-size: 64px 64px;
@@ -663,9 +660,6 @@ body.is-loading-1 #main {
   z-index: 1;
 }
 #viewer .slide .caption {
-  background-image: -moz-linear-gradient(bottom, rgba(16, 16, 16, 0.75), rgba(16, 16, 16, 0.25) 80%, rgba(16, 16, 16, 0));
-  background-image: -webkit-linear-gradient(bottom, rgba(16, 16, 16, 0.75), rgba(16, 16, 16, 0.25) 80%, rgba(16, 16, 16, 0));
-  background-image: -ms-linear-gradient(bottom, rgba(16, 16, 16, 0.75), rgba(16, 16, 16, 0.25) 80%, rgba(16, 16, 16, 0));
   padding: 2em 2em 0.75em 2em;
   position: absolute;
   bottom: 0;
@@ -675,7 +669,7 @@ body.is-loading-1 #main {
   z-index: 1;
 }
 #viewer .slide .caption h2, #viewer .slide .caption h3, #viewer .slide .caption h4, #viewer .slide .caption h5, #viewer .slide .caption h6 {
-  color: #fff;
+  color: #92cee2;
 }
 #viewer .slide .image {
   -moz-transition: opacity 0.5s ease-in-out;
@@ -725,7 +719,11 @@ body.fullscreen #viewer {
   width: 100%;
 }
 body.fullscreen #viewer .inner .toggle {
-  background-image: url("images/open.svg");
+  background-image: url("images/close.svg");
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 body.is-loading-1 #viewer {
   opacity: 0;
@@ -747,9 +745,13 @@ body.is-loading-2 #viewer .slide {
     -webkit-transition: opacity 0.75s ease;
     -ms-transition: opacity 0.75s ease;
     transition: opacity 0.75s ease;
-    background-image: url("images/open.svg");
+    background-image: url("images/close.svg");
     opacity: 0;
     right: 0;
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
   }
   body.fullscreen #viewer .inner .toggle {
     opacity: 1;
@@ -764,7 +766,11 @@ body.is-loading-2 #viewer .slide {
     background-size: 32px 32px;
   }
   body.fullscreen #viewer .inner .toggle {
-    background-image: url("images/open-small.svg");
+    background-image: url("images/close-small.svg");
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
   }
 }
 @media screen and (max-width: 480px) {
@@ -790,4 +796,18 @@ body.is-loading-2 #viewer .slide {
     transition-delay: 0.5s;
     opacity: 1;
   }
+}
+#main .container .home {
+  -webkit-tap-highlight-color: transparent;
+  position: absolute;
+  top: 0;
+  width: 3em;
+  height: 3em;
+  background-image: url("images/house.svg");
+  background-repeat: no-repeat;
+  background-size: 64px 64px;
+  cursor: pointer;
+  z-index: 1;
+  right: 0;
+  background-position: calc(100% - 0.75em) 0.75em;
 }
